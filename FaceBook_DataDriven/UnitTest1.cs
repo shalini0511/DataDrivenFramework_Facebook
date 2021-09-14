@@ -19,7 +19,7 @@ namespace FaceBook_DataDriven
         public void ReadingData()
         {
             
-            ExcelOperation.PopulateInCollection(@"C:\Users\HP\Documents\data.xlsx");
+            ExcelOperation.PopulateInCollection(@"C:\Users\HP\source\repos\FaceBook_DataDriven\FaceBook_DataDriven\data.xlsx");
             Debug.WriteLine("******");
             driver.FindElement(By.Name("email")).SendKeys(ExcelOperation.ReadData(1, "email"));
             System.Threading.Thread.Sleep(2000);
